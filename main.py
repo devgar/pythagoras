@@ -1,9 +1,9 @@
 from math import sqrt as _sqrt
 
-def hypotenuse(a, b):
+def hypotenuse(a: float, b: float) -> float:
   return _sqrt(a**2 + b**2)
 
-def cathetus(h, c):
+def cathetus(h: float, c:float) -> float:
   return _sqrt(h**2 - c**2)
 
 if __name__ == "__main__":
