@@ -1,10 +1,10 @@
 from math import sqrt
 
 def hypotenuse(a, b):
-  pass
+  return sqrt( a**2 + b**2)
 
 def cathetus(h, c):
   pass
 
 if __name__ == "__main__":
-  pass
+  print("(f) hypotenuse(3, 4): %f" % hypotenuse(3, 4))
