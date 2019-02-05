@@ -5,8 +5,13 @@ This module contains some functions from the pythagorean theorem.
 
 from math import sqrt as _sqrt
 
-def hypotenuse(a: float, b: float) -> float:
-  "Returns the hypotenuse of the triangle described by the a and b cathetus."
+def hypotenuse(a: float, b: float=None) -> float:
+  """Returns the hypotenuse of the triangle described by the a and b cathetus.
+
+     optional form: hypotenuse(a:float) -> float
+         Returns the hypotenuse of the triangle described by two a cathetus.
+  """
+  if(not b): return hypotenuse(a, a)
   return _sqrt(a**2 + b**2)
 
 def cathetus(h: float, c: float) -> float:
