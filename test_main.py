@@ -9,6 +9,12 @@ class HypotenuseTestCase(unittest.TestCase):
     
     self.assertEqual(hypotenuse(3, 4), 5.0)
 
+  def test_hypotenuse_4_ranged_5_65_5_66(self):
+    """Is hypotenuse(4) result in range [5.65, 5.66]"""
+    h4 = hypotenuse(4)
+    self.assertGreater(h4, 5.65)
+    self.assertLess(h4, 5.66)
+
 class CathetusTestCase(unittest.TestCase):
   """Test for `main.py` cathetus function."""
 
