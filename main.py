@@ -15,7 +15,7 @@ def hypotenuse(a: float, b: float=None) -> float:
   return _sqrt(a**2 + b**2)
 
 def cathetus(h: float, c: float) -> float:
-  "Returns the cathetus of the triangle described by the hypothenuse (h) and the other cathetus (c)."
+  "Returns the cathetus of the triangle described by the hypotenuse (h) and the other cathetus (c)."
   return _sqrt(h**2 - c**2)
 
 if __name__ == "__main__":
